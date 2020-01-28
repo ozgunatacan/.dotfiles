@@ -340,5 +340,6 @@ function! CocExtensionStatus() abort
 endfunction
 let g:airline_section_c = '%f%{CocExtensionStatus()}'
 
+autocmd FileType scala let b:coc_root_patterns = ['build.sbt']
 
 
